@@ -29,6 +29,8 @@ INSTALLED_APPS = [
 
     'users.apps.UsersConfig',
     'usersinfo.apps.UsersinfoConfig'
+    # 'about.apps.AboutConfig'
+
 ]
 
 MIDDLEWARE = [
@@ -46,7 +48,9 @@ ROOT_URLCONF = 'myprotfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates')
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
